@@ -42,19 +42,19 @@ class STMenuDemoViewController: UIViewController {
         let oldWebViewBtn = UIButton()
         let collectBtn    = UIButton()
         
-        viewBtn.setTitleColor(UIColor.black, for: UIControlState.normal)
-        scrollViewBtn.setTitleColor(UIColor.black, for: UIControlState.normal)
-        tableViewBtn.setTitleColor(UIColor.black, for: UIControlState.normal)
-        webViewBtn.setTitleColor(UIColor.black, for: UIControlState.normal)
-        oldWebViewBtn.setTitleColor(UIColor.black, for: UIControlState.normal)
-        collectBtn.setTitleColor(UIColor.black, for: UIControlState.normal)
+        viewBtn.setTitleColor(UIColor.black, for: .normal)
+        scrollViewBtn.setTitleColor(UIColor.black, for: .normal)
+        tableViewBtn.setTitleColor(UIColor.black, for: .normal)
+        webViewBtn.setTitleColor(UIColor.black, for: .normal)
+        oldWebViewBtn.setTitleColor(UIColor.black, for: .normal)
+        collectBtn.setTitleColor(UIColor.black, for: .normal)
         
-        viewBtn.setTitle("View示例", for: UIControlState.normal)
-        scrollViewBtn.setTitle("ScrollView示例", for: UIControlState.normal)
-        tableViewBtn.setTitle("TableView示例", for: UIControlState.normal)
-        webViewBtn.setTitle("WKWebView示例", for: UIControlState.normal)
-        oldWebViewBtn.setTitle("UIWebView示例", for: UIControlState.normal)
-        collectBtn.setTitle("CollectionView示例", for: UIControlState.normal)
+        viewBtn.setTitle("View示例", for: .normal)
+        scrollViewBtn.setTitle("ScrollView示例", for: .normal)
+        tableViewBtn.setTitle("TableView示例", for: .normal)
+        webViewBtn.setTitle("WKWebView示例", for: .normal)
+        oldWebViewBtn.setTitle("UIWebView示例", for: .normal)
+        collectBtn.setTitle("CollectionView示例", for: .normal)
         
         view.addSubview(viewBtn)
         view.addSubview(scrollViewBtn)
@@ -65,12 +65,12 @@ class STMenuDemoViewController: UIViewController {
         
         let actionSel = #selector(STMenuDemoViewController.didBtnClicked(_:))
         
-        viewBtn.addTarget(self, action: actionSel, for: UIControlEvents.touchUpInside)
-        scrollViewBtn.addTarget(self, action: actionSel, for: UIControlEvents.touchUpInside)
-        tableViewBtn.addTarget(self, action: actionSel, for: UIControlEvents.touchUpInside)
-        webViewBtn.addTarget(self, action: actionSel, for: UIControlEvents.touchUpInside)
-        oldWebViewBtn.addTarget(self, action: actionSel, for: UIControlEvents.touchUpInside)
-        collectBtn.addTarget(self, action: actionSel, for: UIControlEvents.touchUpInside)
+        viewBtn.addTarget(self, action: actionSel, for: .touchUpInside)
+        scrollViewBtn.addTarget(self, action: actionSel, for: .touchUpInside)
+        tableViewBtn.addTarget(self, action: actionSel, for: .touchUpInside)
+        webViewBtn.addTarget(self, action: actionSel, for: .touchUpInside)
+        oldWebViewBtn.addTarget(self, action: actionSel, for: .touchUpInside)
+        collectBtn.addTarget(self, action: actionSel, for: .touchUpInside)
         
         self.viewBtn = viewBtn
         self.scrollViewBtn = scrollViewBtn
